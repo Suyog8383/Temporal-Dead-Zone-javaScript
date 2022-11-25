@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    we can't access let and const before declaration.
+  </body>
+</html>
+<script>
+  /*   a = 1;
+  console.log("@SN ", a);//Uncaught ReferenceError: Cannot access 'a' before initialization
+  let a;
+
+  b = 1;
+  console.log("@SN ", b);//Uncaught SyntaxError: Missing initializer in const declaration
+  const b; */
+
+  let a = 1;
+  a = 2;
+  console.log("@SN ", a); //2
+
+  const b = 1;
+  b = 2;
+  console.log("@SN ", b); //can't reassign
+</script>
